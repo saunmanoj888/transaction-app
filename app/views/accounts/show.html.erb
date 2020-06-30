@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Account numbder:</strong>
+  <%= @account.account_numbder %>
+</p>
+
+<p>
+  <strong>Bank name:</strong>
+  <%= @account.bank_name %>
+</p>
+
+<p>
+  <strong>Ifsc code:</strong>
+  <%= @account.ifsc_code %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @account.balance %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @account.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>

@@ -1,0 +1,32 @@
+<%= form_with(model: beneficiary, local: true) do |form| %>
+  <% if beneficiary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(beneficiary.errors.count, "error") %> prohibited this beneficiary from being saved:</h2>
+
+      <ul>
+        <% beneficiary.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :account_number %>
+    <%= form.text_field :account_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nick_name %>
+    <%= form.text_field :nick_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ifsc_code %>
+    <%= form.text_field :ifsc_code %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

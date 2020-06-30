@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Account number:</strong>
+  <%= @beneficiary.account_number %>
+</p>
+
+<p>
+  <strong>Nick name:</strong>
+  <%= @beneficiary.nick_name %>
+</p>
+
+<p>
+  <strong>Ifsc code:</strong>
+  <%= @beneficiary.ifsc_code %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @beneficiary.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_beneficiary_path(@beneficiary) %> |
+<%= link_to 'Back', beneficiaries_path %>

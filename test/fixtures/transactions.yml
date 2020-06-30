@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1
+  reason: MyString
+  user: one
+  beneficiary: one
+  account: one
+
+two:
+  amount: 1
+  reason: MyString
+  user: two
+  beneficiary: two
+  account: two
